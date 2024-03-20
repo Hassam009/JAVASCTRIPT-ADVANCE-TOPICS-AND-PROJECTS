@@ -9,14 +9,21 @@
     <h1>Some Concepts about Events</h1>
     <ul>
         <li>
-            <button onclick="alert('Why You clicked Me')">Dont Click Me </button>
+            <button id="btn1" onclick="alert('Why You clicked Me')">Dont Click Me </button>
         </li>
         <li>
-            <button onclick="alert('Thanks for Click')">Please Click Me </button>
+            <button  id="btn2" onclick="alert('Thanks for Click')">Please Click Me </button>
         </li>
         <li>
             <button onmouseover="alert('Why you move your mouse on me')">Dont move your mouse to me</button>
         </li>
     </ul>
+
+    <script>
+        document.getElementById("btn1").alert("I am showing through script js")
+        document.getElementById("btn2").addEventListener("click", ()=>{
+            alert("I am showing by addEventListener")
+        })
+    </script>
 </body>
 </html>
