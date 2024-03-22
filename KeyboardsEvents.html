@@ -10,7 +10,7 @@
         <input type="text" id="myinput" placeholder="Type Here">
         <div class="output">
             <p class="KeyPressed">Key Pressed:</p>
-            <p class="KeyPressed">Key Code:</p>
+            <p class="KeyCode">Key Code:</p>
             <p class="KeyPressed">Char CodeAt:</p>
             <p class="KeyPressed">Event Type:</p>
         </div>
@@ -22,13 +22,14 @@
             console.log("Key Pressed", event.key);
             console.log("Key Code", event.code);
             console.log("Event Type", event.type);
+        document.querySelector(".KeyPressed").textContent=`Key Pressed: ${event.key}`;
+        document.querySelector(".KeyCode").textContent=`Key Code: ${event.code}`;
             
         }
         var myinput=document.getElementById("myinput");
         myinput.addEventListener("keydown", handleKeyPress)
    
 
-        document.querySelector(".keyPressed").textContent=`Key Pressed: ${event.key}`;
    
    
     </script>
