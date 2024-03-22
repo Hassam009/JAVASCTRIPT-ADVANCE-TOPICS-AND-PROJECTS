@@ -25,7 +25,12 @@
             
         }
         var myinput=document.getElementById("myinput");
-        myinput.addEventListener("Keydown", handleKeyPress)
+        myinput.addEventListener("keydown", handleKeyPress)
+   
+
+        document.querySelector(".keyPressed").textContent=`Key Pressed: ${event.key}`;
+   
+   
     </script>
 </body>
 </html>
