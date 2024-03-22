@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Concept About Event</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Some Concepts about Events</h1>
     <ul>
-        <li>
-            <button onclick="alert('Why You clicked Me')">Dont Click Me </button>
-        </li>
-        <li>
-            <button  onclick="alert('Why You clicked Me')">Dont Click Me </button>
-        </li>
-        <li>
-            <button id="btn1" onclick="alert('Why You clicked Me')">I am Button </button>
-        </li>
-        <li>
-            <button  id="btn3" onclick="alert('Thanks for Click')">Please Click Me </button>
-            <button  id="btn2" onclick="alert('Thanks for Click')">Learning </button>
-        </li>
-        <li>
-            <button onmouseover="alert('Why you move your mouse on me')">Dont move your mouse to me</button>
-        </li>
+      <li>
+        <button onclick="alert('Why You clicked Me')">Dont Click Me</button>
+      </li>
+      <li>
+        <button onclick="alert('Why You clicked Me')">Dont Click Me</button>
+      </li>
+      <li>
+        <button id="btn1" onclick="alert('Why You clicked Me')">
+          I am Button
+        </button>
+      </li>
+      <li>
+        <button id="btn3" onclick="alert('Thanks for Click')">
+          Please Click Me
+        </button>
+        <button id="btn2" onclick="alert('Thanks for Click')">Learning</button>
+      </li>
+      <li>
+        <button onmouseover="alert('Why you move your mouse on me')">
+          Dont move your mouse to me
+        </button>
+      </li>
     </ul>
 
-    //NOW I AM GOING TO LEARN KEYBOARD Events
-    //Trying to Learn some things about keyboards event
+    
 
     <script>
-        document.getElementById("btn1").alert("I am showing through script js")
-        document.getElementById("btn2").addEventListener("click", ()=>{
-            alert("I am showing by addEventListener")
-        })
+      document.getElementById("btn1").alert("I am showing through script js");
+      document.getElementById("btn2").addEventListener("click", () => {
+        alert("I am showing by addEventListener");
+      });
+      
+    //NOW I AM GOING TO LEARN KEYBOARD Events //Trying to Learn some things
+    //about keyboards event
+    
     </script>
-</body>
+
+
+
+
+  </body>
 </html>

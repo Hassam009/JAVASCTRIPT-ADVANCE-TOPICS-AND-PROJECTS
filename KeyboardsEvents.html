@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBoards Events</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="myinput" placeholder="Type Here">
+        <div class="output">
+            <p class="KeyPressed">Key Pressed:</p>
+            <p class="KeyPressed">Key Code:</p>
+            <p class="KeyPressed">Char CodeAt:</p>
+            <p class="KeyPressed">Event Type:</p>
+        </div>
+    </div>
+    <script>
+        var myinput=document.getElementById("myinput");
+        myinput.addEventListener("Keydown", handleKeyPress)
+    </script>
+</body>
+</html>
