@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-     <button id="addBtn">Add Data to LocalStorage</button>
-     <button id="getBtn">Get Data From LocalStorage</button>
-     <button id="removeBtn">Remove Data From LocalStorage</button>
+  </head>
+  <body>
+    <button id="addBtn">Add Data to LocalStorage</button>
+    <button id="getBtn">Get Data From LocalStorage</button>
+    <button id="removeBtn">Remove Data From LocalStorage</button>
 
-<script>
-    const studentData={
-FirstName:"Hassam",
-LastName:"Amer",
-Age:"23",
-Gender:"Male",
-Statuse:"Single",
-Education:"BSCS", 
-    }
-     
-    document.getElementById("addBtn").addEventListener("click", ()=>{
+    <script>
+      const studentData = {
+        FirstName: "Hassam",
+        LastName: "Amer",
+        Age: "23",
+        Gender: "Male",
+        Statuse: "Single",
+        Education: "BSCS",
+      };
+
+      const addTodoList=()=>{
+        localStorage.getItem("StudentBioData", JSON.stringify(studentData));
+        
+      }
+      document.getElementById("addBtn").addEventListener("click", () => {
         addTodoList();
-    })
-     
-    document.getElementById("getBtn").addEventListener("click", ()=>{
+      });
+
+      document.getElementById("getBtn").addEventListener("click", () => {
         getTodoList();
-    })
-     
-    document.getElementById("removeBtn").addEventListener("click", ()=>{
+      });
+
+      document.getElementById("removeBtn").addEventListener("click", () => {
         removeTodoList();
-    })
-</script>
-
-
-    </body>
+      });
+    </script>
+  </body>
 </html>
