@@ -16,14 +16,25 @@
         LastName: "Amer",
         Age: "23",
         Gender: "Male",
-        Statuse: "Single",
+        Status: "Single", // Corrected spelling
         Education: "BSCS",
       };
 
-      const addTodoList=()=>{
-        localStorage.getItem("StudentBioData", JSON.stringify(studentData));
-        
-      }
+      const addTodoList = () => {
+
+        const bidata=localStorage.setItem("StudentBioData", JSON.stringify(studentData));
+        console.log(bidata)
+      };
+
+      const getTodoList = () => {
+        const data = localStorage.getItem("StudentBioData");
+        console.log(JSON.parse(data)); 
+      };
+
+      const removeTodoList = () => {
+        localStorage.removeItem("StudentBioData");
+      };
+
       document.getElementById("addBtn").addEventListener("click", () => {
         addTodoList();
       });
