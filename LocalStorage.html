@@ -22,8 +22,8 @@
 
       const addTodoList = () => {
 
-        const bidata=localStorage.setItem("StudentBioData", JSON.stringify(studentData));
-        console.log(bidata)
+       localStorage.setItem("StudentBioData", JSON.stringify(studentData));
+       
       };
 
       const getTodoList = () => {
@@ -37,6 +37,7 @@
 
       document.getElementById("addBtn").addEventListener("click", () => {
         addTodoList();
+        
       });
 
       document.getElementById("getBtn").addEventListener("click", () => {
