@@ -14,6 +14,11 @@
     }
 
     setTimeout(delayedFunction,5000)
+    const intervalID=setInterval(delayedFunction,1000)
+
+setTimeout(()=>{
+    clearInterval(intervalID);
+},5000)
 </script>
 </body>
 </html>
