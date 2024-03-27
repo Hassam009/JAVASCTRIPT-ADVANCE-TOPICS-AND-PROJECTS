@@ -32,15 +32,17 @@
 
     fun3=()=>{
         setTimeout(()=>{
-            console.log("I am Asynchronous Function you have to wait for 2 seconds")
-        })  
+            console.log("I am Asynchronous Function and i am appeared after 2 seconds")
+        },2000)  
     }
 
     func4=()=>{
         console.log("Func4 is running and its start");
-        func3();
+        fun3();
         console.log("Function 4 ends")
     }
+
+    func4();
 </script>
 </body>
 </html> 
