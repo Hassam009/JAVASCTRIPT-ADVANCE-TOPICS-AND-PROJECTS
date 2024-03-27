@@ -8,8 +8,25 @@
 <body>
     <h1>In this Topic we will learn about How Js works and all other topics related to it</h1>
     <h2><ul>
-        <li>Parsing</li>
-    </ul></h2>
+        <li>Syncrnous and Asynchronous Method </li>
+<!-- //Synchrnous Code blocks all other code and exucute line by line -->
 
+    </ul>
+</h2>
+<script>
+    //Example of Syncronous Code
+    const fun2=()=>{
+        console.log("Fun2 Starts and end");
+    }
+
+
+    const fun1=()=>{
+        console.log("Fun1 starts");
+        fun2();
+        console.log("Fun1 ends");
+
+    }
+    fun1();
+</script>
 </body>
-</html>
+</html> 
