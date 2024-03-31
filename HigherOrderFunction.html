@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>First Class Function: It is first class function. It's a Concept</h1>
+    <h1>Higher Order Function</h1>
+    <ul>
+      <p>
+        A Higher Order Function is a function that takes value as an argument
+        and returns a function as a result.
+      </p>
+    </ul>
+
+    <h1>Call Back Function</h1>
+    <p>
+      A call back function is a function passed as an argument to another
+      function and executed after the completion of a task
+    </p>
+    <script>
+      function ProcessUserInput(name, callback) {
+        console.log("Recieved Input:" + name);
+        callback(name);
+      }
+      function greet(name){
+        console.log(`Hello ${name}`);
+
+      }
+
+      ProcessUserInput("Hassam", greet)
+    </script>
+  </body>
+</html>
