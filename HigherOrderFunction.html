@@ -31,6 +31,58 @@
       }
 
       ProcessUserInput("Hassam", greet)
+
+      //Example solution
+
+      function mathOperation(a,b,operation){
+  return operation(a,b)
+      } 
+
+      function add(a,b){
+        console.log(`The addition is:${a+b}`)
+        
+      }
+      function sub(a,b){
+        console.log(`The Subtraction is:${a-b}`)
+      }
+      function mul(a,b){
+        return a*b;
+      }
+      console.log(mathOperation(5,7,add));
+      console.log(mathOperation(5,7,sub));
+      console.log(mathOperation(5,7,mul));
+    
+    
+    
+    
+    
+    //ANOTHER METHODS
+
+    function mathOperation(a, b, operation, operationName) {
+        const result = operation(a, b);
+        console.log(`The ${operationName} is: ${result}`);
+        return result;
+    }
+    
+    function add(a, b) {
+        return a + b;
+    }
+    
+    function sub(a, b) {
+        return a - b;
+    }
+    
+    function mul(a, b) {
+        return a * b;
+    }
+    
+    console.log(mathOperation(5, 7, add, 'add')); // Output: The add is: 12
+    console.log(mathOperation(5, 7, sub, 'sub')); // Output: The sub is: -2
+    console.log(mathOperation(5, 7, mul, 'mul')); // Output: The mul is: 35
+    
+    
+    
     </script>
   </body>
 </html>
+ 
